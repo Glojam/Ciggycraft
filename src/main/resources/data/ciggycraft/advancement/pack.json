@@ -1,0 +1,31 @@
+{
+  "parent": "ciggycraft:cig",
+  "criteria": {
+    "get_cigarette": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "ciggycraft:pack_of_cigarettes" ],
+            "components": {
+              "ciggycraft:cigarette_fullness": 20
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "ciggycraft:pack_of_cigarettes"
+    },
+    "title": "A freaking pack, yo?",
+    "description": "Completely fill a Pack of Cigarettes",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "requirements": [
+    [ "get_cigarette" ]
+  ]
+}

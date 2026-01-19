@@ -1,0 +1,28 @@
+{
+  "parent": "ciggycraft:dried",
+  "criteria": {
+    "get_cigarette": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "ciggycraft:cigarette" ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "ciggycraft:cigarette"
+    },
+    "title": "C.G.B. Spender",
+    "description": "Acquire a Cigarette",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "requirements": [
+    [ "get_cigarette" ]
+  ]
+}

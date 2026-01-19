@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "block": "ciggycraft:hanging_tobacco_leaves",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "age": "0"
+              }
+            },
+            {
+              "block": "ciggycraft:hanging_tobacco_leaves",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "age": "1"
+              }
+            },
+            {
+              "block": "ciggycraft:hanging_tobacco_leaves",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "age": "2"
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ciggycraft:hanging_tobacco_leaves"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "block": "ciggycraft:hanging_tobacco_leaves",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "age": "3"
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ciggycraft:tobacco"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "ciggycraft:blocks/hanging_tobacco_leaves"
+}

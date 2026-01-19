@@ -1,0 +1,18 @@
+{
+  "block.ciggycraft.tobacco_crop": "Tobacco Crop",
+  "block.ciggycraft.hanging_tobacco_leaves": "Tobacco Leaves",
+  "item.ciggycraft.tobacco_seeds": "Tobacco Seeds",
+  "item.ciggycraft.tobacco": "Tobacco",
+  "item.ciggycraft.cigarette": "Cigarette",
+  "item.ciggycraft.pack_of_cigarettes": "Pack of Cigarettes",
+
+  "effect.ciggycraft.nicotine": "Nicotine",
+
+  "ciggycraft.configuration.title": "Ciggycraft Configs",
+  "ciggycraft.configuration.section.ciggycraft.common.toml": "Ciggycraft Configs",
+  "ciggycraft.configuration.section.ciggycraft.common.toml.title": "Ciggycraft Configs",
+  "ciggycraft.configuration.items": "Item List",
+  "ciggycraft.configuration.logDirtBlock": "Log Dirt Block",
+  "ciggycraft.configuration.magicNumberIntroduction": "Magic Number Text",
+  "ciggycraft.configuration.magicNumber": "Magic Number"
+}

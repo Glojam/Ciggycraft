@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ciggycraft:block/hanging_tobacco_leaves0"
+  }
+}

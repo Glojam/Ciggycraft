@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ciggycraft:item/cigarette_lit5"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [5, 95, -55],
+      "translation": [3, -4, -11],
+      "scale:": [0.75, 0.75, 0.75]
+    },
+    "firstperson_lefthand": {
+      "rotation": [5, -95, 55],
+      "translation": [3, -4, -9.5],
+      "scale:": [0.75, 0.75, 0.75]
+    }
+  }
+}

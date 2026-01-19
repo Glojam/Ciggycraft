@@ -1,0 +1,64 @@
+{
+  "variants": {
+    "age=0,half=lower,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage0"
+    },
+    "age=0,half=lower,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage0"
+    },
+    "age=0,half=upper,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage0"
+    },
+    "age=0,half=upper,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage0"
+    },
+    "age=1,half=lower,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage1"
+    },
+    "age=1,half=lower,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage1"
+    },
+    "age=1,half=upper,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage1"
+    },
+    "age=1,half=upper,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage1"
+    },
+    "age=2,half=lower,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage2"
+    },
+    "age=2,half=lower,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage2"
+    },
+    "age=2,half=upper,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage2"
+    },
+    "age=2,half=upper,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage2"
+    },
+    "age=3,half=lower,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage3"
+    },
+    "age=3,half=lower,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage3"
+    },
+    "age=3,half=upper,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage3"
+    },
+    "age=3,half=upper,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage3"
+    },
+    "age=4,half=lower,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage3"
+    },
+    "age=4,half=lower,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage3"
+    },
+    "age=4,half=upper,waterlogged=false": {
+      "model": "ciggycraft:block/tobacco_crop_stage4"
+    },
+    "age=4,half=upper,waterlogged=true": {
+      "model": "ciggycraft:block/tobacco_crop_stage4"
+    }
+  }
+}

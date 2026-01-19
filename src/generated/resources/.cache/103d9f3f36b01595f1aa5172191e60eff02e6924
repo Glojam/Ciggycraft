@@ -1,0 +1,6 @@
+// 1.21.1	2026-01-17T20:57:09.5667565	Registries
+212efa6ceca75a0f6ede75e00edff5c0e8f62572 data/ciggycraft/neoforge/biome_modifier/add_tobacco_patch.json
+6f4bba53b5ec5dc19cbe94ff9e16b4f072f3a0c9 data/ciggycraft/worldgen/configured_feature/tobacco_crop_feature.json
+6b3d5993105a807a24df88f621c921ff4be6f098 data/ciggycraft/worldgen/configured_feature/tobacco_patch.json
+6d5581301033eec4deb3dff31da68b2595200f1c data/ciggycraft/worldgen/placed_feature/tobacco_crop_feature_placed.json
+fdb3aa018ba4f315cbe85f4cf2367d7801470e09 data/ciggycraft/worldgen/placed_feature/tobacco_patch_placed.json

@@ -1,0 +1,28 @@
+{
+  "parent": "minecraft:husbandry/root",
+  "criteria": {
+    "get_tobacco": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [ "ciggycraft:tobacco" ]
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "icon": {
+      "id": "ciggycraft:tobacco"
+    },
+    "title": "Tumble Dried",
+    "description": "Dry some tobacco leaves to get raw tobacco",
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "requirements": [
+    [ "get_tobacco" ]
+  ]
+}

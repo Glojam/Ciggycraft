@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "package": "com.glojam.ciggycraft.mixins",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ItemMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "conformVisibility": true
+  }
+}

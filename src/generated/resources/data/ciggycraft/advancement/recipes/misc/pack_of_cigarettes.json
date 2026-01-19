@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cigarette": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ciggycraft:pack_of_cigarettes"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ciggycraft:pack_of_cigarettes"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cigarette"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ciggycraft:pack_of_cigarettes"
+    ]
+  }
+}

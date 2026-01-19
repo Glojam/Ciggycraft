@@ -1,0 +1,56 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ciggycraft:item/cigarette_unlit"
+  },
+  "display": {
+    "firstperson_righthand": {
+      "rotation": [5, 95, -55],
+      "translation": [3, -4, -11],
+      "scale:": [0.75, 0.75, 0.75]
+    },
+    "firstperson_lefthand": {
+      "rotation": [5, -95, 55],
+      "translation": [3, -4, -9.5],
+      "scale:": [0.75, 0.75, 0.75]
+    }
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "ciggycraft:burn_stage": 0
+      },
+      "model": "ciggycraft:item/cigarette_burn_stage0"
+    },
+    {
+      "predicate": {
+        "ciggycraft:burn_stage": 1
+      },
+      "model": "ciggycraft:item/cigarette_burn_stage1"
+    },
+    {
+      "predicate": {
+        "ciggycraft:burn_stage": 2
+      },
+      "model": "ciggycraft:item/cigarette_burn_stage2"
+    },
+    {
+      "predicate": {
+        "ciggycraft:burn_stage": 3
+      },
+      "model": "ciggycraft:item/cigarette_burn_stage3"
+    },
+    {
+      "predicate": {
+        "ciggycraft:burn_stage": 4
+      },
+      "model": "ciggycraft:item/cigarette_burn_stage4"
+    },
+    {
+      "predicate": {
+        "ciggycraft:burn_stage": 5
+      },
+      "model": "ciggycraft:item/cigarette_burn_stage5"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "values": {
+    "ciggycraft:cigarette": {
+      "chance": 0.3
+    },
+    "ciggycraft:hanging_tobacco_leaves": {
+      "chance": 0.6
+    },
+    "ciggycraft:tobacco": {
+      "chance": 0.45
+    },
+    "ciggycraft:tobacco_seeds": {
+      "chance": 0.25
+    }
+  }
+}
