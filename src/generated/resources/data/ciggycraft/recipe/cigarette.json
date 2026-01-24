@@ -10,6 +10,9 @@
     }
   ],
   "result": {
+    "components": {
+      "ciggycraft:stupid": 1769243378401
+    },
     "count": 1,
     "id": "ciggycraft:cigarette"
   }
