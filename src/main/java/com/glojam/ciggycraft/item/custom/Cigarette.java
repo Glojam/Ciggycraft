@@ -13,7 +13,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -28,8 +27,15 @@ import java.util.Objects;
 
 public class Cigarette extends Item {
 
+    private static int stackIndex = 0; // Session-unique identifiers for cigarettes to prevent them from stacking
+
     public Cigarette(Properties properties) {
         super(properties);
+    }
+
+    public void onCreateCigaretteStackItem(ItemStack stack) {
+        stack.set(ModDataComponents.STUPID, Long.parseLong(String.valueOf(stackIndex) + System.currentTimeMillis()));
+        stackIndex++;
     }
 
     @Override
@@ -157,18 +163,10 @@ public class Cigarette extends Item {
     }
 
     @Override
-    public void inventoryTick(ItemStack stack, Level level, Entity entity, int slotId, boolean isSelected) {
-        super.inventoryTick(stack, level, entity, slotId, isSelected);
+    public void verifyComponentsAfterLoad(ItemStack stack) {
         if (stack.get(ModDataComponents.STUPID) == null) {
-            stack.set(ModDataComponents.STUPID, System.nanoTime());
+            onCreateCigaretteStackItem(stack);
         }
-    }
-
-    @Override
-    public void onCraftedBy(ItemStack stack, Level level, Player player) {
-        super.onCraftedBy(stack, level, player);
-        if (stack.get(ModDataComponents.STUPID) == null) {
-            stack.set(ModDataComponents.STUPID, System.nanoTime());
-        }
+        super.verifyComponentsAfterLoad(stack);
     }
 }

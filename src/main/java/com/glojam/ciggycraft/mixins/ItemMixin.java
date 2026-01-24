@@ -29,7 +29,6 @@ public abstract class ItemMixin {
      */
     @Inject(method = "interactLivingEntity", at = @At("TAIL"), cancellable = true)
     public void interactLivingEntity(ItemStack stack, Player player, LivingEntity interactionTarget, InteractionHand usedHand, CallbackInfoReturnable<InteractionResult> cir) {
-        // Ignore
         ItemStack item_mainhand = interactionTarget.getItemInHand(InteractionHand.MAIN_HAND);
         ItemStack item_offhand = interactionTarget.getItemInHand(InteractionHand.OFF_HAND);
         if (stack.getItem() instanceof FlintAndSteelItem || stack.getItem() instanceof FireChargeItem) {
