@@ -20,9 +20,6 @@ public class ModDataComponents {
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<Boolean>> LIT = register("lit",
             builder -> builder.persistent(Codec.BOOL));
 
-    public static final DeferredHolder<DataComponentType<?>, DataComponentType<Long>> STUPID = register("stupid",
-            builder -> builder.persistent(Codec.LONG));
-
     public static final DeferredHolder<DataComponentType<?>, DataComponentType<Integer>> CIGARETTE_FULLNESS = register("cigarette_fullness",
             builder -> builder.persistent(Codec.INT));
 

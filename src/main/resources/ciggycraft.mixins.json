@@ -3,7 +3,8 @@
   "package": "com.glojam.ciggycraft.mixins",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "ItemMixin"
+    "ItemMixin",
+    "BundleContentsMixin"
   ],
   "client": [],
   "injectors": {

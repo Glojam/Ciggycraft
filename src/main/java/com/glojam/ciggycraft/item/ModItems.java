@@ -26,7 +26,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> CIGARETTE = ITEMS.register("cigarette",
-            () -> new Cigarette(new Item.Properties().stacksTo(20)));
+            () -> new Cigarette(new Item.Properties().stacksTo(1)));
 
     public static final DeferredItem<Item> PACK_OF_CIGARETTES = ITEMS.register("pack_of_cigarettes",
             () -> new PackOfCigarettes(new Item.Properties().component(DataComponents.BUNDLE_CONTENTS, new BundleContents(List.of())).stacksTo(1)));

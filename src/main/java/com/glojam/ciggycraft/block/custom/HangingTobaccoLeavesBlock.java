@@ -68,7 +68,7 @@ public class HangingTobaccoLeavesBlock extends HangingRootsBlock {
     protected void randomTick(BlockState state, ServerLevel level, BlockPos pos, RandomSource random) {
         if (state.getValue(AGE) >= MAX_AGE) return;
         if (level.dimension().equals(Level.OVERWORLD)) {
-            if ((level.getDayTime() < 1000) || (level.getDayTime() > 11000)) return;
+            if (level.isNight()) return;
         }
         int numSidesWithSkyLight = 0;
         if (level.canSeeSky(pos.north())) numSidesWithSkyLight++;
@@ -79,7 +79,6 @@ public class HangingTobaccoLeavesBlock extends HangingRootsBlock {
         if (numSidesWithSkyLight < 1) return;
         float humidity = level.getBiome(pos).value().getModifiedClimateSettings().downfall();
         boolean bl = random.nextInt((int)((15f + (humidity * 40f)) / numSidesWithSkyLight)) == 0;
-        Ciggycraft.LOGGER.debug("SIDES: {}", numSidesWithSkyLight);
         if (bl) {
             this.dry(state, level, pos);
         }

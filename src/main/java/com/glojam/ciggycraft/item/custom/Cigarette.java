@@ -27,15 +27,8 @@ import java.util.Objects;
 
 public class Cigarette extends Item {
 
-    private static int stackIndex = 0; // Session-unique identifiers for cigarettes to prevent them from stacking
-
     public Cigarette(Properties properties) {
         super(properties);
-    }
-
-    public void onCreateCigaretteStackItem(ItemStack stack) {
-        stack.set(ModDataComponents.STUPID, Long.parseLong(String.valueOf(stackIndex) + System.currentTimeMillis()));
-        stackIndex++;
     }
 
     @Override
@@ -164,9 +157,6 @@ public class Cigarette extends Item {
 
     @Override
     public void verifyComponentsAfterLoad(ItemStack stack) {
-        if (stack.get(ModDataComponents.STUPID) == null) {
-            onCreateCigaretteStackItem(stack);
-        }
         super.verifyComponentsAfterLoad(stack);
     }
 }
